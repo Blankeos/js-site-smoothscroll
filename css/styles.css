@@ -4,6 +4,11 @@
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+
 }
 
 .navbar {
@@ -42,6 +47,11 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#nav_logo span {
+    padding-right: 10px;
 }
 
 .nav_menu {
@@ -307,7 +317,7 @@
 .main_content p {
     margin-top: 1rem;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: normal;
     color: #fff;
 }
 
@@ -450,7 +460,8 @@
 
 /* Services Section */
 .services {
-    background: #131313;
+    /* background: #131313; */
+    background: #fafafa;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,8 +471,9 @@
 }
 
 .services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -469,6 +481,17 @@
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
     font-size: 2.5rem;
+    position: relative;
+}
+
+.services h1:after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.12);
+    top: 0;
+    z-index: 0;
 }
 
 .services_wrapper {
@@ -522,6 +545,19 @@
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    flex-direction: column;
+}
+
+.services_btn button {
+    margin-bottom: 16px;
+    align-self: center;
+    width: 60%;
+    transition: 0.2s ease;
+}
+
+.services_btn button:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease;
 }
 
 .services_card button {

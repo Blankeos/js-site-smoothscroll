@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway:wght@900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav_container">
-        <a href="#home" id="nav_logo">DIGIKATT</a>
+        <a href="#home" id="nav_logo">
+          <span><i class="fas fa-cat"></i></span>
+          <span>DIGIKATT</span>
+        </a>
+
         <div class="nav_toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -27,9 +36,7 @@
             <a href="#about" class="nav_links" id="about-page">About</a>
           </li>
           <li class="nav_item">
-            <a href="#services" class="nav_links" id="services-page"
-              >Services</a
-            >
+            <a href="#services" class="nav_links" id="services-page">Games</a>
           </li>
           <li class="nav_btn">
             <a href="#sign-up" class="button" id="signup">Sign Up</a>
@@ -41,9 +48,9 @@
     <!-- Hero Section -->
     <div class="hero" id="home">
       <div class="hero_container">
-        <h1 class="hero_heading">Choose your <span>Colors</span></h1>
-        <p class="hero_subheading">Unlimited Possibilities</p>
-        <button class="main_btn"><a href="#">Explore</a></button>
+        <h1 class="hero_heading">We make <span>Games</span></h1>
+        <p class="hero_subheading">Chase and catch your dreams!</p>
+        <button class="main_btn"><a href="#services">Our Games</a></button>
       </div>
     </div>
 
@@ -54,37 +61,64 @@
           <div class="main_img-card"><i class="fas fa-layer-group"></i></div>
         </div>
         <div class="main_content">
-          <h1>What do we do?</h1>
-          <h2>We help businesses scale</h2>
-          <p>Schedule a call to learn more about our services</p>
-          <button class="main_btn"><a href="#">Schedule Call</a></button>
+          <h1>Featured Game</h1>
+          <h2>Highway Blade</h2>
+          <p>
+            An action-packed road beat'em up game where you cut down your
+            enemies with a sword while driving through the highway.
+          </p>
+          <button class="main_btn">
+            <a href="#"
+              ><i class="fab fa-google-play"></i> Get it on Google Play</a
+            >
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Services Section -->
     <div class="services" id="services">
-      <h1>Our Services</h1>
+      <h1 data-text="Our Games">Our Games</h1>
       <div class="services_wrapper">
         <div class="services_card">
-          <h2>Custom Colorways</h2>
-          <p>AI Powered technology</p>
-          <div class="services_btn"><button>Get Started</button></div>
+          <h2>Chromeleon</h2>
+          <p>Chameleon Color Game</p>
+          <div class="services_btn">
+            <button>
+              <span><i class="fab fa-google-play"></i> Google Play</span>
+            </button>
+
+            <button>
+              <span><i class="fab fa-apple"></i> App Store</span>
+            </button>
+          </div>
         </div>
         <div class="services_card">
-          <h2>Are you ready?</h2>
-          <p>Take the leap</p>
-          <div class="services_btn"><button>Get Started</button></div>
+          <h2>Highway Blade</h2>
+          <p>Road beat-em up!</p>
+          <div class="services_btn">
+            <button>
+              <span><i class="fab fa-google-play"></i> Google Play</span>
+            </button>
+          </div>
         </div>
         <div class="services_card">
-          <h2>Full Gradients</h2>
-          <p>AI Powered technology</p>
-          <div class="services_btn"><button>Get Started</button></div>
+          <h2>Agatha Manor</h2>
+          <p>Mansion Horror</p>
+          <div class="services_btn">
+            <button>
+              <span><i class="fab fa-steam"></i> Steam</span>
+            </button>
+          </div>
         </div>
         <div class="services_card">
-          <h2>Infinite Choices</h2>
-          <p>1000's of colors</p>
-          <div class="services_btn"><button>Get Started</button></div>
+          <h2>Shovel Hero</h2>
+          <p>Fun digging time!</p>
+          <div class="services_btn">
+            <button>
+              <span><i class="fab fa-steam"></i> Steam</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -93,10 +127,10 @@
     <div class="main" id="sign-up">
       <div class="main_container">
         <div class="main_content">
-          <h1>Join Our Team</h1>
-          <h2>Sign Up Today</h2>
-          <p>See what makes us different</p>
-          <button class="main_btn"><a href="#">Sign Up</a></button>
+          <h1>Join the Katt Krew</h1>
+          <h2>Apply Today</h2>
+          <p>Let's make fun games together</p>
+          <button class="main_btn"><a href="#">Apply</a></button>
         </div>
         <div class="main_img-container">
           <div class="main_img-card"><i class="fas fa-users"></i></div>
