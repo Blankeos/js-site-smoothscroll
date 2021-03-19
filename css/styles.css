@@ -7,9 +7,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
-
-}
 
 .navbar {
     background: #131313;
@@ -364,9 +361,9 @@ p {
 }
 
 .main_img-container {
-    margin: 10px;
+    margin: 0 50px;
     height: 500px;
-    width: 500px;
+    width: auto;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -399,13 +396,17 @@ p {
     }
 
     .main_img-container {
+        margin: 0;
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 400px;
     }
 
     .main_img-card {
-        height: 425px;
-        width: 425px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .main_content {
@@ -455,6 +456,7 @@ p {
     .main_btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
+        width: 100%;
     }
 }
 
