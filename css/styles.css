@@ -427,6 +427,11 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
+    .highlight {
+       border: none;
+        /* border-bottom: 4px solid rgb(132, 0, 255); */
+    }
 }
 
 @media screen and (max-width: 480px) {
