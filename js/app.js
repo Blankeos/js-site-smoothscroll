@@ -12,27 +12,37 @@ const mobileMenu = () => {
 menu.addEventListener("click", mobileMenu);
 
 // Show active menu when scrolling
+const elem = $(".highlight");
+const homeMenu = $("#home-page");
+const aboutMenu = $("#about-page");
+const servicesMenu = $("#services-page");
+const menus = [homeMenu, aboutMenu, servicesMenu];
+
+const highlightHelper = (menu) => {
+  menus.map((m) => m.removeClass("highlight"));
+  menu.addClass("highlight");
+};
+
 const highlightMenu = () => {
-  const elem = $(".highlight");
-  const homeMenu = $("#home-page");
-  const aboutMenu = $("#about-page");
-  const servicesMenu = $("#services-page");
   let scrollPos = window.scrollY;
 
   //adds 'highlight' class to the menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
-    homeMenu.addClass("highlight");
-    aboutMenu.removeClass("highlight");
+    // homeMenu.addClass("highlight");
+    // aboutMenu.removeClass("highlight");
+    highlightHelper(homeMenu);
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    aboutMenu.addClass("highlight");
-    homeMenu.removeClass("highlight");
-    servicesMenu.removeClass("highlight");
+    // aboutMenu.addClass("highlight");
+    // homeMenu.removeClass("highlight");
+    // servicesMenu.removeClass("highlight");
+    highlightHelper(aboutMenu);
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
-    aboutMenu.removeClass("highlight");
-    homeMenu.removeClass("highlight");
-    servicesMenu.addClass("highlight");
+    // aboutMenu.removeClass("highlight");
+    // homeMenu.removeClass("highlight");
+    // servicesMenu.addClass("highlight");
+    highlightHelper(servicesMenu);
     return;
   }
 
