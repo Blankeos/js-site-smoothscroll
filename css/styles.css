@@ -45,10 +45,16 @@
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
+    transition: 0.2s ease;
 }
 
 #nav_logo span {
     padding-right: 10px;
+}
+
+#nav_logo:hover {
+    transform: scale(1.075) translateY(-1.5px);
+    transition: 0.2s ease;
 }
 
 .nav_menu {
