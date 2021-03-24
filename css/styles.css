@@ -7,6 +7,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 800;
+}
+
 .navbar {
   background: #131313;
   height: 80px;
@@ -306,6 +313,7 @@
 
 .main_content h1 {
   color: #fff;
+  font-size: 2rem;
   width: 100%;
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
@@ -453,7 +461,6 @@
   }
 
   .main_content h1 {
-    font-size: 2.5rem;
     margin-top: 2rem;
   }
 
@@ -484,7 +491,6 @@
   }
 
   .main_content h1 {
-    font-size: 2rem;
     margin-top: 3rem;
   }
 
@@ -611,6 +617,7 @@
 
 .services_card h2 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .services_card p {
