@@ -365,6 +365,7 @@
   position: relative;
   z-index: 2;
   color: #131313;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -375,7 +376,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #f9df74;
   transition: all 0.35s;
   border-radius: 4px;
 }
