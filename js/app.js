@@ -28,20 +28,12 @@ const highlightMenu = () => {
 
   //adds 'highlight' class to the menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
-    // homeMenu.addClass("highlight");
-    // aboutMenu.removeClass("highlight");
     highlightHelper(homeMenu);
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    // aboutMenu.addClass("highlight");
-    // homeMenu.removeClass("highlight");
-    // servicesMenu.removeClass("highlight");
     highlightHelper(aboutMenu);
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
-    // aboutMenu.removeClass("highlight");
-    // homeMenu.removeClass("highlight");
-    // servicesMenu.addClass("highlight");
     highlightHelper(servicesMenu);
     return;
   }
