@@ -19,7 +19,7 @@ const servicesMenu = $("#services-page");
 const menus = [homeMenu, aboutMenu, servicesMenu];
 
 const highlightHelper = (menu) => {
-  menus.map((m) => m.removeClass("highlight"));
+  menus.forEach((e) => e.removeClass("highlight"));
   menu.addClass("highlight");
 };
 
