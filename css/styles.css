@@ -279,6 +279,7 @@ h2 {
 }
 
 .highlight {
+  transition-duration: 1s ease-in-out;
   border-bottom: 4px solid rgb(132, 0, 255);
 }
 
