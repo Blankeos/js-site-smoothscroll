@@ -634,19 +634,27 @@ h2 {
   flex-direction: column;
 }
 
-.services_btn button {
+.services_btn a {
   margin-bottom: 16px;
   align-self: center;
   width: 60%;
   transition: 0.2s ease;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
 }
 
-.services_btn button:hover {
+.services_btn a span i {
+  margin-right: 8px;
+}
+
+.services_btn a:hover {
   transform: scale(1.075);
   transition: 0.2s ease;
 }
 
-.services_card button {
+.services_card a {
   color: #fff;
   padding: 14px 24px;
   border: none;
@@ -654,10 +662,6 @@ h2 {
   border-radius: 4px;
   background: #131313;
   font-size: 1rem;
-}
-
-.services_card button:hover {
-  cursor: pointer;
 }
 
 .services_card:hover {
